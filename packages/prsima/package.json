@@ -6,14 +6,15 @@
   "keywords": [],
   "author": "",
   "devDependencies": {
-    "@repo/typescript-config": "*",
-    "prisma": "^6.5.0"
+    "@repo/typescript-config": "*"
   },
   "exports":{
     "./client":"./src/index.ts"
   },
   "license": "ISC",
   "dependencies": {
-    "@prisma/client": "^6.5.0"
+    "@prisma/client": "^6.5.0",
+    "prisma": "^6.5.0"
+
   }
 }
