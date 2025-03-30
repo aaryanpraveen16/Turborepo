@@ -2,19 +2,23 @@
   "name": "@repo/db",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "type": "module",
   "keywords": [],
   "author": "",
   "devDependencies": {
-    "@repo/typescript-config": "*"
+    "@repo/typescript-config": "*",
+    "typescript": "^5.0.0"
   },
-  "exports":{
-    "./client":"./src/index.ts"
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "exports": {
+    "./client": "./dist/index.js"
   },
   "license": "ISC",
   "dependencies": {
     "@prisma/client": "^6.5.0",
     "prisma": "^6.5.0"
-
   }
 }
